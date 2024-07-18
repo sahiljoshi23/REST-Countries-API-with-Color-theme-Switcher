@@ -1,16 +1,14 @@
-# Frontend Mentor - REST Countries API with color theme switcher solution
+# REST Countries API with color theme switcher solution
 
-This is a solution to the [REST Countries API with color theme switcher challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/rest-countries-api-with-color-theme-switcher-5cacc469fec04111f7b848ca). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
+A single-page application that displays information about all the countries of the world by integrating with a REST API.
 
 ## Table of contents
 
 - [Overview](#overview)
   - [The challenge](#the-challenge)
   - [Screenshot](#screenshot)
-  - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
   - [Useful resources](#useful-resources)
 - [Author](#author)
 
@@ -31,11 +29,6 @@ Users should be able to:
 
 ![](screenshot.png)
 
-### Links
-
-- Solution URL: [https://github.com/SyedZawwarAhmed/Rest-Countries-API](https://github.com/SyedZawwarAhmed/Rest-Countries-API)
-- Live Site URL:[https://syedzawwarahmed.github.io/Countries-of-the-World/](https://syedzawwarahmed.github.io/Countries-of-the-World/)
-
 ## My process
 
 ### Built with
@@ -46,23 +39,6 @@ Users should be able to:
 - CSS Grid
 - JavaScript
 
-### What I learned
-
-While making this project, the most important thing which I learned is the fetch API which is also the foundation of this website.
-
-One other thing which I also learned is the local storage which I used for saving the user preference for theme (light/dark).
-
-Here is the snippet of the fetch API I used in this project
-```js
-fetch("https://restcountries.eu/rest/v2/all")
-  .then((res) => res.json())
-  .then((data) => {
-    countries = data;
-    countries.forEach((country) => {
-      main.innerHTML += `<div class="country"><div class="flag-container"><img class="flag" src=${country.flag}></div><div class="country-details"><h2 class="country-name">${country.name}</h2><span><strong>Population: </strong>${country.population}</span><br><span><strong>Region: </strong>${country.region}</span><br><span><strong>Capital: </strong>${country.capital}</span></div></div>`;
-    });
-  });
-```
 
 ### Useful resources
 
@@ -71,7 +47,6 @@ fetch("https://restcountries.eu/rest/v2/all")
 
 ## Author
 
-- Syed Zawwar Ahmed
-- Frontend Mentor - [@SyedZawwarAhmed](https://www.frontendmentor.io/profile/SyedZawwarAhmed)
-- Github - [@SyedZawwarAhmed](https://github.com/SyedZawwarAhmed)
-- Linkedin - [@SyedZawwarAhmed](https://www.linkedin.com/in/syed-zawwar-ahmed-b7345a1b8/)
+- Sahil Dipak Joshi
+- Github - [@SahilDipakJoshi](https://github.com/sahiljoshi23?tab=repositories)
+- Linkedin - [@SahilDipakJoshi](https://www.linkedin.com/in/sahil-joshi-bb23a52a6/)
